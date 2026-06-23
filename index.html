@@ -1,0 +1,800 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Business Logo Design – Creative Logo & Brand Identity Company USA</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --purple: #534AB7;
+      --purple-light: #EEEDFE;
+      --purple-mid: #AFA9EC;
+      --green: #1D9E75;
+      --green-light: #E1F5EE;
+      --coral: #D85A30;
+      --coral-light: #FAECE7;
+      --amber: #EF9F27;
+      --text-primary: #1a1a1a;
+      --text-secondary: #6b6b6b;
+      --border: #e5e5e5;
+      --bg: #ffffff;
+      --bg-secondary: #f8f8f8;
+      --radius-sm: 8px;
+      --radius-md: 12px;
+      --radius-lg: 16px;
+    }
+
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Inter', sans-serif; color: var(--text-primary); background: var(--bg); line-height: 1.6; }
+
+    /* ── NAV ── */
+    .nav {
+      position: sticky; top: 0; z-index: 100;
+      background: rgba(255,255,255,0.95);
+      backdrop-filter: blur(8px);
+      border-bottom: 1px solid var(--border);
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 0 60px; height: 64px;
+    }
+    .nav-logo {
+      display: flex; align-items: center; gap: 10px;
+      font-size: 16px; font-weight: 600; color: var(--text-primary);
+      text-decoration: none;
+    }
+    .nav-logo-icon {
+      width: 32px; height: 32px; border-radius: 8px;
+      background: var(--purple); display: flex; align-items: center; justify-content: center;
+    }
+    .nav-logo-icon svg { width: 18px; height: 18px; fill: #fff; }
+    .nav-links { display: flex; align-items: center; gap: 6px; }
+    .nav-links a {
+      font-size: 14px; color: var(--text-secondary); text-decoration: none;
+      padding: 6px 14px; border-radius: var(--radius-sm);
+      transition: background .15s, color .15s;
+    }
+    .nav-links a:hover { background: var(--bg-secondary); color: var(--text-primary); }
+    .nav-right { display: flex; align-items: center; gap: 10px; }
+    .nav-phone { font-size: 13px; color: var(--text-secondary); display: flex; align-items: center; gap: 6px; }
+    .nav-phone i { color: var(--purple); }
+    .btn-primary {
+      background: var(--purple); color: #fff; font-size: 13px; font-weight: 500;
+      padding: 9px 20px; border-radius: var(--radius-sm); border: none; cursor: pointer;
+      text-decoration: none; display: inline-block; transition: opacity .15s;
+    }
+    .btn-primary:hover { opacity: .88; }
+    .btn-secondary {
+      background: transparent; color: var(--text-primary); font-size: 13px; font-weight: 500;
+      padding: 9px 20px; border-radius: var(--radius-sm);
+      border: 1px solid var(--border); cursor: pointer; text-decoration: none;
+      display: inline-block; transition: background .15s;
+    }
+    .btn-secondary:hover { background: var(--bg-secondary); }
+
+    /* ── HERO ── */
+    .hero {
+      max-width: 1200px; margin: 0 auto;
+      padding: 80px 60px 64px;
+      display: grid; grid-template-columns: 1fr 1fr; gap: 56px; align-items: center;
+    }
+    .hero-badge {
+      display: inline-flex; align-items: center; gap: 7px;
+      background: var(--purple-light); color: var(--purple);
+      font-size: 12px; font-weight: 500; padding: 5px 14px;
+      border-radius: 999px; margin-bottom: 20px;
+    }
+    .hero-badge .dot {
+      width: 6px; height: 6px; border-radius: 50%; background: var(--purple);
+      animation: pulse 2s infinite;
+    }
+    @keyframes pulse {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50% { opacity: .5; transform: scale(.8); }
+    }
+    .hero h1 {
+      font-size: 42px; font-weight: 600; line-height: 1.18;
+      color: var(--text-primary); margin-bottom: 18px;
+      letter-spacing: -.02em;
+    }
+    .hero h1 em { font-style: normal; color: var(--purple); }
+    .hero p {
+      font-size: 16px; color: var(--text-secondary); line-height: 1.7;
+      margin-bottom: 32px; max-width: 440px;
+    }
+    .hero-btns { display: flex; gap: 12px; flex-wrap: wrap; margin-bottom: 36px; }
+    .hero-trust { display: flex; align-items: center; gap: 14px; }
+    .hero-trust-avatars { display: flex; }
+    .hero-trust-avatars span {
+      width: 30px; height: 30px; border-radius: 50%;
+      border: 2px solid #fff; margin-left: -8px; font-size: 11px; font-weight: 600;
+      display: flex; align-items: center; justify-content: center;
+    }
+    .hero-trust-avatars span:first-child { margin-left: 0; }
+    .hero-trust-avatars span:nth-child(1) { background: var(--purple-light); color: var(--purple); }
+    .hero-trust-avatars span:nth-child(2) { background: var(--green-light); color: var(--green); }
+    .hero-trust-avatars span:nth-child(3) { background: var(--coral-light); color: var(--coral); }
+    .hero-trust-text { font-size: 13px; color: var(--text-secondary); }
+    .hero-trust-text strong { color: var(--text-primary); }
+
+    /* Hero visual */
+    .hero-visual {
+      background: var(--purple-light); border-radius: var(--radius-lg);
+      padding: 24px; display: flex; flex-direction: column; gap: 12px;
+    }
+    .logo-card {
+      background: #fff; border-radius: var(--radius-md);
+      padding: 14px 16px; display: flex; align-items: center; gap: 14px;
+      border: 1px solid var(--border); transition: box-shadow .2s;
+    }
+    .logo-card:hover { box-shadow: 0 4px 16px rgba(0,0,0,.06); }
+    .logo-icon {
+      width: 42px; height: 42px; border-radius: 10px; flex-shrink: 0;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 17px; font-weight: 700; color: #fff;
+    }
+    .logo-icon.a { background: var(--purple); }
+    .logo-icon.b { background: var(--green); }
+    .logo-icon.c { background: var(--coral); }
+    .logo-meta { flex: 1; }
+    .logo-meta .name { font-size: 14px; font-weight: 500; color: var(--text-primary); }
+    .logo-meta .tag { font-size: 12px; color: var(--text-secondary); margin-top: 1px; }
+    .badge-done {
+      font-size: 11px; font-weight: 500;
+      background: var(--green-light); color: var(--green);
+      padding: 3px 9px; border-radius: 999px; white-space: nowrap;
+    }
+    .hero-mini-stats { display: grid; grid-template-columns: repeat(3,1fr); gap: 10px; }
+    .mini-stat {
+      background: #fff; border-radius: var(--radius-sm); padding: 12px 10px;
+      border: 1px solid var(--border); text-align: center;
+    }
+    .mini-stat .n { font-size: 18px; font-weight: 600; color: var(--purple); }
+    .mini-stat .l { font-size: 11px; color: var(--text-secondary); margin-top: 2px; }
+
+    /* ── STATS BAR ── */
+    .stats-bar {
+      background: var(--purple);
+      display: grid; grid-template-columns: repeat(4,1fr);
+    }
+    .stat-item {
+      padding: 24px 40px; border-right: 1px solid rgba(255,255,255,.15);
+    }
+    .stat-item:last-child { border-right: none; }
+    .stat-item .n { font-size: 28px; font-weight: 600; color: #fff; }
+    .stat-item .l { font-size: 13px; color: var(--purple-mid); margin-top: 3px; }
+
+    /* ── SECTIONS COMMON ── */
+    .section { max-width: 1200px; margin: 0 auto; padding: 72px 60px; }
+    .section-eyebrow {
+      display: inline-flex; align-items: center; gap: 8px;
+      font-size: 12px; font-weight: 500; color: var(--purple);
+      letter-spacing: .06em; text-transform: uppercase; margin-bottom: 10px;
+    }
+    .section-eyebrow::before {
+      content: ''; display: block; width: 16px; height: 2px; background: var(--purple); border-radius: 2px;
+    }
+    .section-title {
+      font-size: 32px; font-weight: 600; color: var(--text-primary);
+      line-height: 1.22; letter-spacing: -.015em; margin-bottom: 8px;
+    }
+    .section-sub { font-size: 16px; color: var(--text-secondary); margin-bottom: 44px; }
+
+    /* ── SERVICES ── */
+    .services-grid {
+      display: grid; grid-template-columns: repeat(3,1fr); gap: 16px;
+    }
+    .svc-card {
+      background: var(--bg); border: 1px solid var(--border);
+      border-radius: var(--radius-md); padding: 24px;
+      transition: border-color .2s, box-shadow .2s;
+    }
+    .svc-card:hover { border-color: var(--purple-mid); box-shadow: 0 6px 20px rgba(83,74,183,.08); }
+    .svc-icon-wrap {
+      width: 44px; height: 44px; border-radius: 10px;
+      background: var(--purple-light); display: flex; align-items: center; justify-content: center;
+      margin-bottom: 16px;
+    }
+    .svc-icon-wrap i { font-size: 20px; color: var(--purple); }
+    .svc-name { font-size: 15px; font-weight: 500; color: var(--text-primary); margin-bottom: 6px; }
+    .svc-desc { font-size: 13px; color: var(--text-secondary); line-height: 1.65; }
+    .svc-link {
+      display: inline-flex; align-items: center; gap: 5px;
+      font-size: 13px; color: var(--purple); text-decoration: none; margin-top: 14px;
+      font-weight: 500;
+    }
+    .svc-link:hover { gap: 8px; }
+    .svc-link i { font-size: 12px; transition: transform .15s; }
+    .svc-link:hover i { transform: translateX(2px); }
+
+    /* ── PROCESS ── */
+    .process-section { background: var(--bg-secondary); }
+    .process-inner { max-width: 1200px; margin: 0 auto; padding: 72px 60px; }
+    .process-grid {
+      display: grid; grid-template-columns: repeat(3,1fr); gap: 32px; position: relative;
+    }
+    .proc-step { position: relative; }
+    .proc-num {
+      width: 40px; height: 40px; border-radius: 50%;
+      background: var(--purple-light); color: var(--purple);
+      font-size: 15px; font-weight: 600;
+      display: flex; align-items: center; justify-content: center;
+      margin-bottom: 16px;
+    }
+    .proc-title { font-size: 16px; font-weight: 500; color: var(--text-primary); margin-bottom: 6px; }
+    .proc-desc { font-size: 14px; color: var(--text-secondary); line-height: 1.65; }
+
+    /* ── PORTFOLIO ── */
+    .portfolio-grid {
+      display: grid; grid-template-columns: repeat(3,1fr); gap: 16px;
+    }
+    .port-card {
+      border-radius: var(--radius-md); overflow: hidden;
+      border: 1px solid var(--border); aspect-ratio: 4/3;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 32px; font-weight: 700; color: #fff;
+      position: relative; transition: transform .2s;
+    }
+    .port-card:hover { transform: translateY(-3px); }
+    .port-card .overlay {
+      position: absolute; inset: 0; background: rgba(0,0,0,.35);
+      display: flex; flex-direction: column; align-items: center; justify-content: center;
+      opacity: 0; transition: opacity .2s;
+    }
+    .port-card:hover .overlay { opacity: 1; }
+    .overlay span { font-size: 14px; color: #fff; font-weight: 500; letter-spacing: .02em; }
+    .port-card:nth-child(1) { background: linear-gradient(135deg, #534AB7, #8F87E4); }
+    .port-card:nth-child(2) { background: linear-gradient(135deg, #1D9E75, #5DCAA5); }
+    .port-card:nth-child(3) { background: linear-gradient(135deg, #D85A30, #EF9F27); }
+    .port-card:nth-child(4) { background: linear-gradient(135deg, #185FA5, #378ADD); }
+    .port-card:nth-child(5) { background: linear-gradient(135deg, #993C1D, #D85A30); }
+    .port-card:nth-child(6) { background: linear-gradient(135deg, #3B6D11, #97C459); }
+
+    /* ── PRICING ── */
+    .pricing-grid {
+      display: grid; grid-template-columns: repeat(3,1fr); gap: 16px; align-items: start;
+    }
+    .price-card {
+      border: 1px solid var(--border); border-radius: var(--radius-md);
+      padding: 28px; background: var(--bg);
+    }
+    .price-card.featured { border: 2px solid var(--purple); position: relative; }
+    .price-card.featured::before {
+      content: 'Most Popular';
+      position: absolute; top: -13px; left: 50%; transform: translateX(-50%);
+      background: var(--purple); color: #fff;
+      font-size: 11px; font-weight: 600; padding: 4px 14px; border-radius: 999px;
+      white-space: nowrap;
+    }
+    .plan-name { font-size: 15px; font-weight: 600; color: var(--text-primary); margin-bottom: 6px; }
+    .plan-tagline { font-size: 13px; color: var(--text-secondary); margin-bottom: 20px; }
+    .plan-price { display: flex; align-items: baseline; gap: 8px; margin-bottom: 24px; }
+    .plan-price .amount { font-size: 36px; font-weight: 700; color: var(--text-primary); }
+    .plan-price .orig { font-size: 14px; color: var(--text-secondary); text-decoration: line-through; }
+    .plan-divider { height: 1px; background: var(--border); margin-bottom: 20px; }
+    .plan-feat { list-style: none; display: flex; flex-direction: column; gap: 9px; margin-bottom: 24px; }
+    .plan-feat li {
+      font-size: 13px; color: var(--text-secondary);
+      display: flex; gap: 9px; align-items: flex-start;
+    }
+    .plan-feat li i { color: var(--green); font-size: 14px; flex-shrink: 0; margin-top: 1px; }
+    .plan-btn-wrap .btn-primary, .plan-btn-wrap .btn-secondary { width: 100%; text-align: center; }
+
+    /* ── TESTIMONIALS ── */
+    .testi-section { background: var(--bg-secondary); }
+    .testi-inner { max-width: 1200px; margin: 0 auto; padding: 72px 60px; }
+    .testi-grid {
+      display: grid; grid-template-columns: repeat(3,1fr); gap: 16px;
+    }
+    .testi-card {
+      background: var(--bg); border-radius: var(--radius-md);
+      padding: 24px; border: 1px solid var(--border);
+    }
+    .stars { color: var(--amber); font-size: 14px; margin-bottom: 12px; letter-spacing: 2px; }
+    .testi-text {
+      font-size: 14px; color: var(--text-secondary); line-height: 1.7;
+      margin-bottom: 18px; font-style: italic;
+    }
+    .testi-author { display: flex; align-items: center; gap: 12px; }
+    .avatar {
+      width: 36px; height: 36px; border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 13px; font-weight: 600; flex-shrink: 0;
+    }
+    .av1 { background: var(--purple-light); color: var(--purple); }
+    .av2 { background: var(--green-light); color: var(--green); }
+    .av3 { background: var(--coral-light); color: var(--coral); }
+    .av4 { background: #FEF9E7; color: #B7950B; }
+    .av5 { background: #EBF5FB; color: #2874A6; }
+    .av6 { background: #F2F3F4; color: #566573; }
+    .author-name { font-size: 14px; font-weight: 500; color: var(--text-primary); }
+    .author-role { font-size: 12px; color: var(--text-secondary); }
+
+    /* ── CTA BANNER ── */
+    .cta-banner {
+      background: var(--purple); margin: 0;
+      padding: 72px 60px;
+      display: flex; align-items: center; justify-content: space-between;
+      gap: 32px; flex-wrap: wrap;
+    }
+    .cta-banner h2 { font-size: 30px; font-weight: 600; color: #fff; margin-bottom: 6px; }
+    .cta-banner p { font-size: 15px; color: var(--purple-mid); }
+    .cta-banner-btns { display: flex; gap: 12px; flex-shrink: 0; }
+    .btn-white {
+      background: #fff; color: var(--purple); font-size: 14px; font-weight: 600;
+      padding: 12px 28px; border-radius: var(--radius-sm); border: none; cursor: pointer;
+      text-decoration: none; display: inline-block; transition: opacity .15s;
+    }
+    .btn-white:hover { opacity: .9; }
+    .btn-outline-white {
+      background: transparent; color: #fff; font-size: 14px; font-weight: 500;
+      padding: 12px 28px; border-radius: var(--radius-sm);
+      border: 1px solid rgba(255,255,255,.4); cursor: pointer;
+      text-decoration: none; display: inline-block; transition: background .15s;
+    }
+    .btn-outline-white:hover { background: rgba(255,255,255,.1); }
+
+    /* ── FOOTER ── */
+    .footer { background: #111; color: #aaa; }
+    .footer-inner {
+      max-width: 1200px; margin: 0 auto; padding: 56px 60px 32px;
+    }
+    .footer-grid {
+      display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 40px;
+      margin-bottom: 48px;
+    }
+    .footer-brand { }
+    .footer-brand .logo {
+      display: flex; align-items: center; gap: 10px;
+      font-size: 15px; font-weight: 600; color: #fff; margin-bottom: 14px;
+    }
+    .footer-brand .logo-box {
+      width: 30px; height: 30px; background: var(--purple); border-radius: 7px;
+      display: flex; align-items: center; justify-content: center;
+    }
+    .footer-brand .logo-box svg { width: 16px; height: 16px; fill: #fff; }
+    .footer-brand p { font-size: 13px; line-height: 1.7; color: #888; max-width: 260px; margin-bottom: 16px; }
+    .footer-socials { display: flex; gap: 10px; }
+    .footer-socials a {
+      width: 34px; height: 34px; border-radius: 8px;
+      border: 1px solid #333; display: flex; align-items: center; justify-content: center;
+      color: #888; text-decoration: none; font-size: 14px;
+      transition: border-color .15s, color .15s;
+    }
+    .footer-socials a:hover { border-color: var(--purple-mid); color: #fff; }
+    .footer-col h4 { font-size: 13px; font-weight: 600; color: #fff; margin-bottom: 14px; }
+    .footer-col ul { list-style: none; display: flex; flex-direction: column; gap: 8px; }
+    .footer-col ul li a {
+      font-size: 13px; color: #888; text-decoration: none; transition: color .15s;
+    }
+    .footer-col ul li a:hover { color: #fff; }
+    .footer-bottom {
+      border-top: 1px solid #222; padding-top: 24px;
+      display: flex; align-items: center; justify-content: space-between;
+      flex-wrap: wrap; gap: 10px;
+    }
+    .footer-bottom p { font-size: 12px; color: #666; }
+    .footer-bottom .badges { display: flex; gap: 10px; align-items: center; }
+    .footer-bottom .badge {
+      font-size: 11px; color: #666; border: 1px solid #333;
+      padding: 3px 9px; border-radius: 999px; display: flex; align-items: center; gap: 5px;
+    }
+    .footer-bottom .badge i { color: var(--green); font-size: 11px; }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 900px) {
+      .nav { padding: 0 24px; }
+      .nav-links, .nav-phone { display: none; }
+      .hero { grid-template-columns: 1fr; padding: 48px 24px; gap: 40px; }
+      .hero h1 { font-size: 30px; }
+      .section, .process-inner, .testi-inner { padding: 52px 24px; }
+      .services-grid, .process-grid, .pricing-grid, .testi-grid, .portfolio-grid { grid-template-columns: 1fr; }
+      .stats-bar { grid-template-columns: repeat(2,1fr); }
+      .cta-banner { padding: 48px 24px; flex-direction: column; }
+      .footer-grid { grid-template-columns: 1fr 1fr; }
+      .footer-inner { padding: 40px 24px 24px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav">
+    <a class="nav-logo" href="#">
+      <div class="nav-logo-icon">
+        <svg viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+      </div>
+      Business Logo Design
+    </a>
+    <div class="nav-links">
+      <a href="#services">Services</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#testimonials">Reviews</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <div class="nav-right">
+      <div class="nav-phone">
+        <i class="fas fa-phone-alt"></i>
+        +1 (302) 208-9894
+      </div>
+      <a href="#contact" class="btn-primary">Free Consultation</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section>
+    <div class="hero">
+      <div>
+        <div class="hero-badge">
+          <span class="dot"></span>
+          Trusted by 500+ brands worldwide
+        </div>
+        <h1>Your Brand Deserves a Logo Worth <em>Remembering</em></h1>
+        <p>From custom logos to full brand identity packages — we help startups and businesses build a presence that stands out, converts, and lasts.</p>
+        <div class="hero-btns">
+          <a href="#contact" class="btn-primary">Start Your Project</a>
+          <a href="#portfolio" class="btn-secondary">View Portfolio →</a>
+        </div>
+        <div class="hero-trust">
+          <div class="hero-trust-avatars">
+            <span>JM</span><span>SR</span><span>AK</span>
+          </div>
+          <div class="hero-trust-text">
+            <strong>500+ brands</strong> built — 98% satisfaction rate
+          </div>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="logo-card">
+          <div class="logo-icon a">N</div>
+          <div class="logo-meta">
+            <div class="name">NovaTech Solutions</div>
+            <div class="tag">Logo Design · Tech Industry</div>
+          </div>
+          <span class="badge-done"><i class="fas fa-check"></i> Delivered</span>
+        </div>
+        <div class="logo-card">
+          <div class="logo-icon b">G</div>
+          <div class="logo-meta">
+            <div class="name">GreenLeaf Organics</div>
+            <div class="tag">Brand Identity · Retail</div>
+          </div>
+          <span class="badge-done"><i class="fas fa-check"></i> Delivered</span>
+        </div>
+        <div class="logo-card">
+          <div class="logo-icon c">A</div>
+          <div class="logo-meta">
+            <div class="name">Apex Consulting</div>
+            <div class="tag">Full Combo · Finance</div>
+          </div>
+          <span class="badge-done"><i class="fas fa-check"></i> Delivered</span>
+        </div>
+        <div class="hero-mini-stats">
+          <div class="mini-stat"><div class="n">48h</div><div class="l">Avg Delivery</div></div>
+          <div class="mini-stat"><div class="n">100%</div><div class="l">Money Back</div></div>
+          <div class="mini-stat"><div class="n">∞</div><div class="l">Revisions</div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS BAR -->
+  <div class="stats-bar">
+    <div class="stat-item"><div class="n">500+</div><div class="l">Brands Built</div></div>
+    <div class="stat-item"><div class="n">98%</div><div class="l">Satisfaction Rate</div></div>
+    <div class="stat-item"><div class="n">10+</div><div class="l">Services Offered</div></div>
+    <div class="stat-item"><div class="n">48h</div><div class="l">Turnaround Time</div></div>
+  </div>
+
+  <!-- SERVICES -->
+  <section id="services" class="section">
+    <div class="section-eyebrow">What We Do</div>
+    <h2 class="section-title">Everything your brand needs</h2>
+    <p class="section-sub">From day one to launch — we cover all the bases.</p>
+    <div class="services-grid">
+      <div class="svc-card">
+        <div class="svc-icon-wrap"><i class="fas fa-paint-brush"></i></div>
+        <div class="svc-name">Logo Design</div>
+        <div class="svc-desc">Unlimited concepts, unlimited revisions. A logo that's truly, distinctly yours — no templates.</div>
+        <a href="#" class="svc-link">Learn more <i class="fas fa-arrow-right"></i></a>
+      </div>
+      <div class="svc-card">
+        <div class="svc-icon-wrap"><i class="fas fa-globe"></i></div>
+        <div class="svc-name">Web Development</div>
+        <div class="svc-desc">Fast, mobile-ready websites built to convert visitors into customers with a clean, modern look.</div>
+        <a href="#" class="svc-link">Learn more <i class="fas fa-arrow-right"></i></a>
+      </div>
+      <div class="svc-card">
+        <div class="svc-icon-wrap"><i class="fas fa-mobile-alt"></i></div>
+        <div class="svc-name">App Design</div>
+        <div class="svc-desc">Intuitive and beautiful UI/UX design for iOS and Android apps, from wireframe to final handoff.</div>
+        <a href="#" class="svc-link">Learn more <i class="fas fa-arrow-right"></i></a>
+      </div>
+      <div class="svc-card">
+        <div class="svc-icon-wrap"><i class="fas fa-bullhorn"></i></div>
+        <div class="svc-name">Digital Marketing</div>
+        <div class="svc-desc">Social media management, SEO, and paid ads that grow your audience and drive real revenue.</div>
+        <a href="#" class="svc-link">Learn more <i class="fas fa-arrow-right"></i></a>
+      </div>
+      <div class="svc-card">
+        <div class="svc-icon-wrap"><i class="fas fa-film"></i></div>
+        <div class="svc-name">Motion Graphics</div>
+        <div class="svc-desc">Animated explainer videos and brand motion content that tell your story in a memorable way.</div>
+        <a href="#" class="svc-link">Learn more <i class="fas fa-arrow-right"></i></a>
+      </div>
+      <div class="svc-card">
+        <div class="svc-icon-wrap"><i class="fas fa-shopping-bag"></i></div>
+        <div class="svc-name">E-commerce</div>
+        <div class="svc-desc">Full online store setup with product pages, payment integration, and ongoing technical support.</div>
+        <a href="#" class="svc-link">Learn more <i class="fas fa-arrow-right"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROCESS -->
+  <div class="process-section">
+    <div class="process-inner">
+      <div class="section-eyebrow">How It Works</div>
+      <h2 class="section-title">Simple 3-step process</h2>
+      <p class="section-sub">No confusing back-and-forth. Just clear steps from idea to launch.</p>
+      <div class="process-grid">
+        <div class="proc-step">
+          <div class="proc-num">1</div>
+          <div class="proc-title">Brief us</div>
+          <div class="proc-desc">Tell us your vision, industry, target audience, and style preferences. Our team reviews and starts within hours.</div>
+        </div>
+        <div class="proc-step">
+          <div class="proc-num">2</div>
+          <div class="proc-title">We design</div>
+          <div class="proc-desc">Multiple concepts from expert designers. Revise unlimited times until you're 100% happy — no time pressure.</div>
+        </div>
+        <div class="proc-step">
+          <div class="proc-num">3</div>
+          <div class="proc-title">You launch</div>
+          <div class="proc-desc">Receive all file formats, full ownership rights, and everything you need to go live with confidence.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- PORTFOLIO -->
+  <section id="portfolio" class="section">
+    <div class="section-eyebrow">Portfolio</div>
+    <h2 class="section-title">Work we're proud of</h2>
+    <p class="section-sub">A sample of brands we've built across industries.</p>
+    <div class="portfolio-grid">
+      <div class="port-card">
+        NT
+        <div class="overlay"><span>NovaTech Solutions</span></div>
+      </div>
+      <div class="port-card">
+        GL
+        <div class="overlay"><span>GreenLeaf Organics</span></div>
+      </div>
+      <div class="port-card">
+        AX
+        <div class="overlay"><span>Apex Consulting</span></div>
+      </div>
+      <div class="port-card">
+        BL
+        <div class="overlay"><span>BlueLine Capital</span></div>
+      </div>
+      <div class="port-card">
+        RF
+        <div class="overlay"><span>RedFox Media</span></div>
+      </div>
+      <div class="port-card">
+        VP
+        <div class="overlay"><span>VerdePrime</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRICING -->
+  <div class="process-section">
+    <div class="process-inner" id="pricing">
+      <div class="section-eyebrow">Pricing</div>
+      <h2 class="section-title">Clear packages, no surprises</h2>
+      <p class="section-sub">Every plan includes unlimited revisions and full file ownership.</p>
+      <div class="pricing-grid">
+        <div class="price-card">
+          <div class="plan-name">Logo Only</div>
+          <div class="plan-tagline">Perfect for new businesses</div>
+          <div class="plan-price">
+            <span class="amount">$125</span>
+            <span class="orig">$416</span>
+          </div>
+          <div class="plan-divider"></div>
+          <ul class="plan-feat">
+            <li><i class="fas fa-check"></i> Unlimited logo concepts</li>
+            <li><i class="fas fa-check"></i> 4 dedicated designers</li>
+            <li><i class="fas fa-check"></i> All file formats (AI, PNG, SVG)</li>
+            <li><i class="fas fa-check"></i> Business card design</li>
+            <li><i class="fas fa-check"></i> 100% money back guarantee</li>
+          </ul>
+          <div class="plan-btn-wrap">
+            <a href="#contact" class="btn-secondary">Get started</a>
+          </div>
+        </div>
+        <div class="price-card featured">
+          <div class="plan-name">Startup Combo</div>
+          <div class="plan-tagline">Logo + Website + More</div>
+          <div class="plan-price">
+            <span class="amount">$1,999</span>
+            <span class="orig">$3,999</span>
+          </div>
+          <div class="plan-divider"></div>
+          <ul class="plan-feat">
+            <li><i class="fas fa-check"></i> Logo design + 12-page website</li>
+            <li><i class="fas fa-check"></i> Mobile responsive design</li>
+            <li><i class="fas fa-check"></i> Facebook page design</li>
+            <li><i class="fas fa-check"></i> Email signature</li>
+            <li><i class="fas fa-check"></i> Dedicated account manager</li>
+            <li><i class="fas fa-check"></i> 100% money back guarantee</li>
+          </ul>
+          <div class="plan-btn-wrap">
+            <a href="#contact" class="btn-primary">Get started</a>
+          </div>
+        </div>
+        <div class="price-card">
+          <div class="plan-name">Website Starter</div>
+          <div class="plan-tagline">Get online fast</div>
+          <div class="plan-price">
+            <span class="amount">$199</span>
+            <span class="orig">$663</span>
+          </div>
+          <div class="plan-divider"></div>
+          <ul class="plan-feat">
+            <li><i class="fas fa-check"></i> 1-page responsive website</li>
+            <li><i class="fas fa-check"></i> Contact form integration</li>
+            <li><i class="fas fa-check"></i> Full deployment included</li>
+            <li><i class="fas fa-check"></i> SEO basics setup</li>
+            <li><i class="fas fa-check"></i> 100% money back guarantee</li>
+          </ul>
+          <div class="plan-btn-wrap">
+            <a href="#contact" class="btn-secondary">Get started</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- TESTIMONIALS -->
+  <div class="testi-section" id="testimonials">
+    <div class="testi-inner">
+      <div class="section-eyebrow">Reviews</div>
+      <h2 class="section-title">What our clients say</h2>
+      <p class="section-sub">Don't take our word for it.</p>
+      <div class="testi-grid">
+        <div class="testi-card">
+          <div class="stars">★★★★★</div>
+          <p class="testi-text">"The result was far above our expectations. Our whole team loved it! Would definitely work with them again."</p>
+          <div class="testi-author">
+            <div class="avatar av1">JM</div>
+            <div><div class="author-name">James M.</div><div class="author-role">CEO, NovaTech</div></div>
+          </div>
+        </div>
+        <div class="testi-card">
+          <div class="stars">★★★★★</div>
+          <p class="testi-text">"We availed the combo package and it did not disappoint. Our brand has since become really well-known."</p>
+          <div class="testi-author">
+            <div class="avatar av2">SR</div>
+            <div><div class="author-name">Sara R.</div><div class="author-role">Founder, GreenLeaf</div></div>
+          </div>
+        </div>
+        <div class="testi-card">
+          <div class="stars">★★★★★</div>
+          <p class="testi-text">"The guys at BLD are like superheroes. Their creativity is out of this world. Highly recommend to anyone."</p>
+          <div class="testi-author">
+            <div class="avatar av3">AK</div>
+            <div><div class="author-name">Ali K.</div><div class="author-role">CMO, Apex Group</div></div>
+          </div>
+        </div>
+        <div class="testi-card">
+          <div class="stars">★★★★★</div>
+          <p class="testi-text">"Delivered on time, on budget, and the quality was outstanding. Couldn't ask for more from a design agency."</p>
+          <div class="testi-author">
+            <div class="avatar av4">TL</div>
+            <div><div class="author-name">Tom L.</div><div class="author-role">Founder, BlueLine</div></div>
+          </div>
+        </div>
+        <div class="testi-card">
+          <div class="stars">★★★★★</div>
+          <p class="testi-text">"We had a tight deadline and they still came through. The website looks incredible and our traffic doubled."</p>
+          <div class="testi-author">
+            <div class="avatar av5">MN</div>
+            <div><div class="author-name">Maria N.</div><div class="author-role">Dir. Marketing, RedFox</div></div>
+          </div>
+        </div>
+        <div class="testi-card">
+          <div class="stars">★★★★★</div>
+          <p class="testi-text">"Simple process, great communication, and the final logo is exactly what we envisioned. Perfect experience."</p>
+          <div class="testi-author">
+            <div class="avatar av6">PO</div>
+            <div><div class="author-name">Peter O.</div><div class="author-role">CEO, VerdePrime</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CTA BANNER -->
+  <div class="cta-banner" id="contact">
+    <div>
+      <h2>Ready to build your brand?</h2>
+      <p>Free consultation · No commitment · 100% money back guarantee</p>
+    </div>
+    <div class="cta-banner-btns">
+      <a href="tel:+13022089894" class="btn-white">Call us now</a>
+      <a href="mailto:info@businesslogodesign.us" class="btn-outline-white">Send an email</a>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="logo">
+            <div class="logo-box">
+              <svg viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+            </div>
+            Business Logo Design
+          </div>
+          <p>We are a full-service creative agency based in the USA, helping businesses of all sizes build brands that matter.</p>
+          <div class="footer-socials">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="#">Logo Design</a></li>
+            <li><a href="#">Web Development</a></li>
+            <li><a href="#">App Design</a></li>
+            <li><a href="#">Digital Marketing</a></li>
+            <li><a href="#">Motion Graphics</a></li>
+            <li><a href="#">E-commerce</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="tel:+13022089894">+1 (302) 208-9894</a></li>
+            <li><a href="mailto:info@businesslogodesign.us">info@businesslogodesign.us</a></li>
+            <li><a href="#">Live Chat</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 Business Logo Design. All rights reserved.</p>
+        <div class="badges">
+          <span class="badge"><i class="fas fa-shield-alt"></i> Money Back Guarantee</span>
+          <span class="badge"><i class="fas fa-lock"></i> Secure Payments</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
